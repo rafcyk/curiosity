@@ -18,6 +18,12 @@ h1{
   transform: translate(-10%,-10%);
 }
 
+section{
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  }
+
 /* ----------------------WELCOME PAGE----------------------- */
 
 main.welcomePage{
@@ -78,11 +84,6 @@ main.welcomePage div.wrapWelcomePage div.next img.arrowNext{
 }
 
 /* ------------------------------CHOOSE OPTION------------------------------ */
-section.chooseMenu{
-width: 80%;
-height: 100vh;
-margin: 0 auto;
-}
 
 section.chooseMenu div.wrapChooseButtons{
   position: absolute;
@@ -148,13 +149,283 @@ section.chooseMenu div.wrapChooseButtons div:nth-child(1) a:hover ~ img{
 }
 
 section.chooseMenu div.wrapChooseButtons div:nth-child(3) a:hover ~ img{
-  left:-400px;
+  left:-360px;
   opacity: 1;
 }
 
 /* --------------------------ADD CURIIOSITY ------------------------ */
 
+section.addCuriosity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
+section.addCuriosity div.wrapCuriosity{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.addCuriosity div.wrapCuriosity img.back{
+  width:100px;
+  height: 40px;
+  position: absolute;
+  top:25%;
+  left: 5%;
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: .2s;
+}
+
+section.addCuriosity div.wrapCuriosity img.back:hover{
+  top:24%;
+  width:130px;
+  height: 50px;
+}
+
+section.addCuriosity div.wrapCuriosity div.contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.addCuriosity div.wrapCuriosity div.contents textarea{
+  width:500px;
+  height:250px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 2rem;
+}
+
+section.addCuriosity div.wrapCuriosity div.contents select#categories{
+  margin-left: 20px;
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 2rem;
+}
+
+section.addCuriosity div.wrapCuriosity div.add{
+  margin-top: 60px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.addCuriosity div.wrapCuriosity div.add button{
+  width: 200px;
+  height: 50px;
+  font-size: 2.5rem;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: #fff;
+  color:#000;
+  cursor: pointer;
+  transition: .2s;
+}
+
+section.addCuriosity div.wrapCuriosity div.add button:hover{
+  background-color: #000;
+  color:#fff;
+}
+
+section.addCuriosity div.wrapCuriosity div.add img{
+  width:150px;
+  height: 70px;
+  transform: rotate(180deg);
+  animation: arrowAdd 1s infinite linear;
+}
+
+/* ---------------------------CHOOSE CATEGORY---------------------- */
+section.chooseCategory{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.chooseCategory img.back{
+  width:90px;
+  height: 40px;
+  position: absolute;
+  top:25%;
+  left: 5%;
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: .2s;
+}
+
+section.chooseCategory img.back:hover{
+  width:110px;
+}
+
+section.chooseCategory div.options{
+  width:900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.chooseCategory div.options div.option{
+  width:250px;
+  height: 400px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px;
+  transition: .2s;
+}
+
+section.chooseCategory div.options div.option:hover{
+  width: 280px;
+  height: 430px;
+}
+
+section.chooseCategory div.options div.option img{
+  width:100%;
+  height: 200px;
+}
+
+section.chooseCategory div.options div.option a{
+  margin-bottom: 50px;
+  text-decoration: none;
+  color:#000;
+  font-size: 2.5rem;
+  border:2px solid black;
+  border-radius: 15px;
+  padding: 5px 30px;
+  transition: .2s;
+}
+
+section.chooseCategory div.options div.option:hover a{
+  padding: 10px 35px;
+}
+
+section.chooseCategory div.options div.option a:hover{
+  background-color: #000;
+  color:#fff;
+}
+
+/* ----------------------------- CURIOSITIES---------------------------- */
+section.curiosities{
+  width: 100%;
+  min-height: 100vh;
+}
+
+section.curiosities img.back{
+  width:70px;
+  height: 40px;
+  position: absolute;
+  top:3%;
+  left: 5%;
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: .2s;
+}
+
+section.curiosities img.back:hover{
+  width: 90px;
+}
+
+section.curiosities div.wrapCuriosities{
+  position: absolute;
+  top:25%;
+  left:0; 
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity{
+  flex-basis: 300px;
+  height: 400px;
+  border:2px solid black;
+  border-radius: 25px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  cursor: pointer;
+  transition: .2s;
+  position: relative;
+  pointer-events: auto;
+  font-size: 2.5rem;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity:hover{
+  background-color: #222;
+  color:white;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity p{
+font-size: 2.5rem;
+display: none;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity img{
+  position: absolute;
+  top:5%;
+  right: 5%;
+  width:30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity button.show{
+  display: block;
+  padding: 5px 20px;
+  font-size: 2rem;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity:hover button.show{
+  padding: 10px 25px;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity button.show.hide{
+  display: none;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity img.active,
+section.curiosities div.wrapCuriosities div.curiosity p.active{
+  display: block;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity p.active{
+  margin-top: 50px;
+}
+
+section.curiosities div.wrapCuriosities div.curiosity.big{
+  width:95%;
+  height: 95%;
+  background-color: #222;
+  position: fixed;
+  z-index: 9999!important;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color:white;
+  cursor: auto;
+  text-align: center;
+  padding: 20px 70px;
+}
 
 /* -----------------------------ANIMATIONS------------------------ */
 
@@ -167,3 +438,13 @@ section.chooseMenu div.wrapChooseButtons div:nth-child(3) a:hover ~ img{
   margin-left: 0;
 }
 }
+
+@keyframes arrowAdd{
+  0%{
+    margin-left: 0px;
+  }
+  
+  100%{
+    margin-left: 40px;
+  }
+  }

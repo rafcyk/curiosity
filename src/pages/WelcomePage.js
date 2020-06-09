@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom';
 import Smile from '../images/smile.png';
 import Arrow from '../images/arrow.png';
 
-//pages
-import ChooseOption from '../pages/ChooseOption';
-
-
 const WelcomePage = () => {
 return(
     <main className = 'welcomePage'>
