@@ -198,6 +198,7 @@ section.addCuriosity div.wrapCuriosity div.contents textarea{
   border: 2px solid black;
   border-radius: 25px;
   font-size: 2rem;
+  outline: none;
 }
 
 section.addCuriosity div.wrapCuriosity div.contents select#categories{

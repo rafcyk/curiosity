@@ -93,6 +93,9 @@ handleCategory = (e) => {
 
 add = () => {
 
+  if(this.state.curiosityText === ''){
+    alert('Wypełnij najpierw pole tekstu!');
+  }
 
   if(this.state.addCategory === 'sport'){
       const curiosity = {
@@ -104,6 +107,7 @@ add = () => {
         sportCuriosities: prevState.sportCuriosities.concat(curiosity),
         curiosityText: ''
       }))
+      alert('Dodano pomyślnie :)');
   }
   else if(this.state.addCategory === 'music'){
       const curiosity = {
@@ -115,6 +119,7 @@ add = () => {
         musicCuriosities: prevState.musicCuriosities.concat(curiosity),
         curiosityText: ''
       }))
+      alert('Dodano pomyślnie :)');
   }
   else if(this.state.addCategory === 'history'){
       const curiosity = {
@@ -126,6 +131,7 @@ add = () => {
         historyCuriosities: prevState.historyCuriosities.concat(curiosity),
         curiosityText: ''
       }))
+      alert('Dodano pomyślnie :)');
   }
   }
 

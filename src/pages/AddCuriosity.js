@@ -11,7 +11,7 @@ return(
         <div className="wrapCuriosity">
             <Link to = '/chooseOption'><img src={ArrowBack} alt="back" className = 'back' title = 'back'/></Link>
             <div className="contents">
-                <textarea value = {props.curiosityText} onChange = {props.handleCuriosityText} placeholder = "Wpisz treść ciekawostki..." />
+                <textarea value = {props.curiosityText} onChange = {props.handleCuriosityText} placeholder = "Wpisz treść ciekawostki..." minLength = "5"/>
 
                 <select name="categories" id="categories" value = {props.addCategory} onChange = {props.handleCategory}>
                     <option value="sport">Sport</option>
