@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/curiosity/static/css/main.984b39b5.chunk.css",
+    "main.js": "/curiosity/static/js/main.e7e6ece6.chunk.js",
+    "main.js.map": "/curiosity/static/js/main.e7e6ece6.chunk.js.map",
+    "runtime-main.js": "/curiosity/static/js/runtime-main.3da787ea.js",
+    "runtime-main.js.map": "/curiosity/static/js/runtime-main.3da787ea.js.map",
+    "static/js/2.ee0f332d.chunk.js": "/curiosity/static/js/2.ee0f332d.chunk.js",
+    "static/js/2.ee0f332d.chunk.js.map": "/curiosity/static/js/2.ee0f332d.chunk.js.map",
+    "index.html": "/curiosity/index.html",
+    "precache-manifest.438260b47467d8d7d01323c5fbff9812.js": "/curiosity/precache-manifest.438260b47467d8d7d01323c5fbff9812.js",
+    "service-worker.js": "/curiosity/service-worker.js",
+    "static/css/main.984b39b5.chunk.css.map": "/curiosity/static/css/main.984b39b5.chunk.css.map",
+    "static/js/2.ee0f332d.chunk.js.LICENSE.txt": "/curiosity/static/js/2.ee0f332d.chunk.js.LICENSE.txt",
+    "static/media/arrow.png": "/curiosity/static/media/arrow.f4543b33.png",
+    "static/media/close.png": "/curiosity/static/media/close.d201676f.png",
+    "static/media/history1.png": "/curiosity/static/media/history1.52fb8712.png",
+    "static/media/music1.png": "/curiosity/static/media/music1.83035d66.png",
+    "static/media/smile.png": "/curiosity/static/media/smile.fcc50af4.png",
+    "static/media/sport1.png": "/curiosity/static/media/sport1.bd16cb75.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3da787ea.js",
+    "static/js/2.ee0f332d.chunk.js",
+    "static/css/main.984b39b5.chunk.css",
+    "static/js/main.e7e6ece6.chunk.js"
+  ]
+}
