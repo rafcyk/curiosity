@@ -426,6 +426,7 @@ section.curiosities div.wrapCuriosities div.curiosity.big{
   cursor: auto;
   text-align: center;
   padding: 20px 70px;
+  margin:0;
 }
 
 /* -----------------------------ANIMATIONS------------------------ */

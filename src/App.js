@@ -4,6 +4,7 @@ import { BrowserRouter as Router,Route, Switch } from 'react-router-dom';
 
 //import styles
 import './styles/App.css';
+import './styles/Media.css';
 
 //import components
 import WelcomePage from './pages/WelcomePage';
@@ -93,11 +94,13 @@ handleCategory = (e) => {
 
 add = () => {
 
-  if(this.state.curiosityText === ''){
+  if(this.state.curiosityText.trim() === ''){
     alert('Wypełnij najpierw pole tekstu!');
   }
 
-  if(this.state.addCategory === 'sport'){
+  else{
+
+    if(this.state.addCategory === 'sport'){
       const curiosity = {
           id : Math.random().toString(36).substr(2, 9),
           desc : this.state.curiosityText
@@ -133,6 +136,9 @@ add = () => {
       }))
       alert('Dodano pomyślnie :)');
   }
+  }
+
+
   }
 
 
