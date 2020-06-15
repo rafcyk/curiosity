@@ -147,7 +147,7 @@ render(){
   return(
     <>
     <Router basename = {process.env.PUBLIC_URL}>
-    <h1>ℂ𝕚𝕖𝕜𝕒𝕨𝕪 𝕤́𝕨𝕚𝕒𝕥𝕒</h1>
+    <h1>Ciekawy świata.</h1>
 
       <Switch>
               <Route path = '/' exact>
